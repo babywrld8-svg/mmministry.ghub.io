@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MM MINISTRY</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      min-height: 100vh;
+      background: radial-gradient(ellipse 900px 600px at 25% 15%, rgba(26,61,69,0.55) 0%, transparent 70%),
+                  radial-gradient(ellipse 700px 500px at 80% 85%, rgba(42,26,18,0.7) 0%, transparent 65%),
+                  linear-gradient(180deg, #0f1e26 0%, #122028 18%, #16252c 35%, #1a1e1c 62%, #1e1915 78%, #1a1210 100%);
+      color: white; font-family: 'Montserrat', sans-serif;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; padding: 60px 20px;
+    }
+    .logo { width: 320px; max-width: 80%; margin-bottom: 30px; filter: drop-shadow(0 0 22px rgba(255,122,24,0.22)); }
+    h1 { font-size: 56px; font-weight: 800; letter-spacing: 0.08em; }
+    .divider { width: 96px; height: 3px; background: #FF7A18; margin: 30px auto; }
+    .label { font-size: 11px; font-weight: 700; letter-spacing: 0.32em; color: #FF7A18; text-transform: uppercase; margin-bottom: 14px; }
+    .mission { font-size: 24px; font-weight: 300; max-width: 560px; line-height: 1.5; }
+    .youtube-btn { margin-top:24px; display:inline-flex; align-items:center; gap:10px; background:#FF7A18; color:white; padding:18px 32px; border-radius:999px; text-decoration:none; font-weight:700; }
+  </style>
 </head>
-<body class="bg-[#07102a] text-white flex flex-col items-center text-center px-6 py-16">
+<body>
+  <img src="mm_ministry_transparent.png" alt="MM Ministry Logo" class="logo" />
+  <h1>MM MINISTRY</h1>
+  <div class="divider"></div>
+  
+  <div style="margin-top:80px;">
+    <div class="label">Our Mission</div>
+    <p class="mission">Preparing the Bride of Christ for the second coming of Jesus.</p>
+  </div>
 
-  <img src="photo_1791783149041.png lass="w-80 mb-10" alt="Logo">
+  <div style="margin-top:80px;">
+    <div class="label">Our Scripture</div>
+    <p style="max-width:600px; font-style:italic; font-size:20px; line-height:1.7;">
+      Matthew 25:6 — "And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him."
+    </p>
+  </div>
 
-  <h1 class="text-5xl text-[#c9a86a] font-bold mb-12 tracking-widest">MM MINISTRY</h1>
+  <div style="margin-top:80px;">
+    <div class="label">Watch & Connect</div>
+    <a class="youtube-btn" href="https://www.youtube.com/@MihlaliAngel.Malgas" target="_blank">
+      YouTube: @MihlaliAngel.Malgas →
+    </a>
+  </div>
 
-  <p class="text-sm text-[#c9a86a] uppercase tracking-[0.3em]">Our Mission</p>
-  <p class="text-2xl mt-2 mb-8">Preparing the Bride of Christ for the second coming of Jesus.</p>
-
-  <div class="w-32 h-px bg-[#c9a86a] my-8"></div>
-
-  <p class="text-sm text-[#c9a86a] uppercase tracking-[0.3em]">Our Scripture - Matthew 25:6</p>
-  <p class="text-2xl italic mt-4 max-w-2xl">"And at midnight there was a cry made, Behold, the bridegroom cometh; go ye out to meet him."</p>
-
-  <div class="w-32 h-px bg-[#c9a86a] my-8"></div>
-
-  <p class="text-sm text-[#c9a86a] uppercase tracking-[0.3em]">Our YouTube Channel</p>
-  <a href="https://www.youtube.com/@MihlaliAngel.Malgas" target="_blank" 
-     class="mt-4 inline-flex items-center gap-2 bg-[#c9a86a] text-[#07102a] px-8 py-3 rounded-full font-bold hover:bg-white transition">
-     Visit our YouTube: @MihlaliAngel.Malgas →
-  </a>
-
+  <div style="margin-top:100px; font-size:10px; letter-spacing:0.22em; color:rgba(255,255,255,0.25);">MM Ministry • Est. 2024</div>
 </body>
 </html>
